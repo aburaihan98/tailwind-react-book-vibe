@@ -1,9 +1,12 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function NavBar() {
   return (
     <div className="py-12 flex justify-between items-center">
-      <h2 className="font-bold text-3xl">Book Vibe</h2>
+      <h2 className="font-bold text-3xl">
+        {" "}
+        <Link to="/">Book Vibe</Link>{" "}
+      </h2>
       <div className="font-semibold text-lg flex gap-4">
         <button>
           <NavLink
